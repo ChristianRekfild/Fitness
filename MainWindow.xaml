@@ -9,20 +9,30 @@
     <Grid>
         <TabControl x:Name="MainMenu">
             
-            <TabItem x:Name="smartphonesTab">
+            <TabItem x:Name="usersTab">
                 <TabItem.Header>
                     <StackPanel Orientation="Horizontal">
                         <!--<Ellipse Height="10" Width="10" Fill="Black" />-->
                         <TextBlock Margin="3">Пользователи</TextBlock>
                     </StackPanel>
                 </TabItem.Header>
-                <!--<TabItem.Content>
-                    <StackPanel>
-                        <RadioButton IsChecked="True">iPhone S6</RadioButton>
-                        <RadioButton>LG G 4</RadioButton>
-                        <RadioButton>Lumia 550</RadioButton>
-                    </StackPanel>
-                </TabItem.Content>-->
+                
+                <TabItem.Content>
+                    <Grid>
+                        
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="4*" MinWidth="200"/>
+                            <ColumnDefinition Width="6*" MinWidth="200"/>
+                        </Grid.ColumnDefinitions>
+
+                        <GroupBox Grid.Column="0" Header="ФИО">
+                            <DockPanel>
+                                
+                            </DockPanel>
+                        </GroupBox>
+
+                    </Grid>
+                </TabItem.Content>
             </TabItem>
             
         </TabControl>
