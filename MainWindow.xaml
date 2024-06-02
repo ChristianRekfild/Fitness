@@ -1,0 +1,30 @@
+﻿<Window x:Class="Fitness.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Fitness"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="720" Width="1280">
+    <Grid>
+        <TabControl x:Name="MainMenu">
+            
+            <TabItem x:Name="smartphonesTab">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <!--<Ellipse Height="10" Width="10" Fill="Black" />-->
+                        <TextBlock Margin="3">Пользователи</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <!--<TabItem.Content>
+                    <StackPanel>
+                        <RadioButton IsChecked="True">iPhone S6</RadioButton>
+                        <RadioButton>LG G 4</RadioButton>
+                        <RadioButton>Lumia 550</RadioButton>
+                    </StackPanel>
+                </TabItem.Content>-->
+            </TabItem>
+            
+        </TabControl>
+    </Grid>
+</Window>
